@@ -35,6 +35,7 @@ Der/die Proband:in weicht von der geforderten Leistung ab. Daraufhin wird die Wa
 Der Test ist/wird beendet, dadurch tritt der UC 1.04 nicht auf. Der Test muss aus gesundheitlichen Gründen abgebrochen werden. Es tritt ein technischer Defekt auf oder andere Widerstandswerte werden verletzt. In allen Fällen wird die Warnung bei der Leistungsabweichung nicht angezeigt.
 
 ## Hinweise:
+Die Warnung ist nicht kritisch und soll nur bei der besseren Ausführung helfen.
 
 ## Änderungshinweise:
-0.03, 14.03.2025, Elias Maier
+0.04, 14.03.2025, Elias Maier
