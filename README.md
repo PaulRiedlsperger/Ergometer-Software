@@ -6,7 +6,7 @@ UC 1.04 (Alarm bei Leistungsabweichung)
 Bei einer zu großen Abweichung der Leistung werden dem/der Diagnostiker:in und dem/der Proband:in auf dem Display ein entsprechender Hinweis angezeigt und ein akustischer Warnton abgespielt. Bei Bedarf wird der Test manuell abgebrochen.
 
 ## Beteiligte Akteur:innen:
-Diagnostiker:in, Proband:in
+Diagnostiker:in, Proband:in.
 
 ## Status:
 In Arbeit
@@ -15,7 +15,7 @@ In Arbeit
 UC 1.00
 
 ## Auslöser:
-Durchführung einer standardisierten Leistungsdiagnose
+Durchführung einer standardisierten Leistungsdiagnose.
 
 ## Vorbedingungen:
 UC 1.00 - Leistungsdiagnostik,
@@ -29,7 +29,7 @@ Aufzeichnung aller Daten.
 Der Leistungsinput wird angepasst und der Leistungstest kann ordnungsgemäß fortgeführt werden.
 
 ## Standardablauf:
-Der/die Proband:in weicht von der geforderten Leistung ab. Daraufhin wird die Warnung angezeigt und die Leistung kann entsprechend gesteigert oder gesenkt werden
+Der/die Proband:in weicht von der geforderten Leistung ab. Daraufhin wird die Warnung angezeigt und die Leistung kann entsprechend gesteigert oder gesenkt werden.
 
 ## Alternative Ablaufschritte:
 Der Test ist/wird beendet, dadurch tritt der UC 1.04 nicht auf. Der Test muss aus gesundheitlichen Gründen abgebrochen werden. Es tritt ein technischer Defekt auf oder andere Widerstandswerte werden verletzt. In allen Fällen wird die Warnung bei der Leistungsabweichung nicht angezeigt.
@@ -37,4 +37,4 @@ Der Test ist/wird beendet, dadurch tritt der UC 1.04 nicht auf. Der Test muss au
 ## Hinweise:
 
 ## Änderungshinweise:
-0.01, 14.03.2025, Elias Maier
+0.02, 14.03.2025, Elias Maier
