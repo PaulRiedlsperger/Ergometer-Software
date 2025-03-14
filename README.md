@@ -20,7 +20,7 @@ Durchführung einer standardisierten Leistungsdiagnose.
 ## Vorbedingungen:
 UC 1.00 - Leistungsdiagnostik,
 UC 1.01 (Probandin anlegen),
-UC 1.02 (Leistungstest anlegen),
+UC 1.02 (Leistungstest anlegen).
 
 ## Invarianten:
 Aufzeichnung aller Daten.
@@ -37,4 +37,4 @@ Der Test ist/wird beendet, dadurch tritt der UC 1.04 nicht auf. Der Test muss au
 ## Hinweise:
 
 ## Änderungshinweise:
-0.02, 14.03.2025, Elias Maier
+0.03, 14.03.2025, Elias Maier
