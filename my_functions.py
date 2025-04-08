@@ -41,5 +41,5 @@ def real_age(date_of_birth: str) -> int:
     birth_date = datetime.strptime(date_of_birth, '%Y-%m-%d')
     today = datetime.today()
     age = today.year - birth_date.year - ((today.month, today.day) < (birth_date.month, birth_date.day))
-    print(age)
+    #print(age)
     return age
