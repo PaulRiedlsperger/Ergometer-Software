@@ -28,3 +28,18 @@ def build_experiment(experiment_name, date, supervisor, subject) -> dict:
             }
     return experiment_dict
     
+def real_age(date_of_birth: str) -> int:
+    """Calculate the real age of a person based on their date of birth.
+
+    Args:
+        date_of_birth (str): The date of birth in the format 'YYYY-MM-DD'.
+
+    Returns:
+        int: The real age in years.
+    """
+    from datetime import datetime
+    birth_date = datetime.strptime(date_of_birth, '%Y-%m-%d')
+    today = datetime.today()
+    age = today.year - birth_date.year - ((today.month, today.day) < (birth_date.month, birth_date.day))
+    print(age)
+    return age

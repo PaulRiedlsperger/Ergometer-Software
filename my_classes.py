@@ -1,7 +1,7 @@
 from my_functions import estimate_max_hr
+from my_functions import real_age
 
-
-
+#superclass Person():
 class Person():
     def __init__(self, person_instance :dict):
         self.first_name = person_instance['first_name']
@@ -21,7 +21,7 @@ class Supervisor(Person):
     pass
 
 
-person_instance : dict = {"id": 1, "first_name": "John", "last_name": "Doe", "sex": "male", "age": 30}
+person_instance : dict = {"id": 1, "first_name": "John", "last_name": "Doe", "sex": "male", "age": real_age("1990-01-01")}
 
 # class Experiment():
 #     def __init__(self, experiment):
@@ -29,3 +29,4 @@ person_instance : dict = {"id": 1, "first_name": "John", "last_name": "Doe", "se
 #     pass         
 
 Subject(person_instance)
+
