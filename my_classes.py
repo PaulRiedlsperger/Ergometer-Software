@@ -9,16 +9,20 @@ class Person():
     def __init__(self, person : dict):
         self.name = person['name']
         self.surname = person['surname']
-        self.date_of_birth = person['age']
-        self.age = calculate_age(self.date_of_birth)
-        self.gender = person['gender']
 
 class Subject(Person):
     """
     Represents a test subject in an experiment.
     Inherits from Person and adds functionality to estimate maximum heart rate.
     """
+    def __init__(self, person : dict):
    
+        super().__init__(person)
+
+        self.date_of_birth = person['age']
+        self.age = calculate_age(self.date_of_birth)
+        self.gender = person['gender']
+    
     def estimate_maximum_hr(self):
         """
         Returns the estimated maximum heart rate of the subject and the date of birth based on the input dictionary.
