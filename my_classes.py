@@ -9,6 +9,7 @@ class Person():
     def __init__(self, person : dict):
         self.name = person['name']
         self.surname = person['surname']
+    
 
 class Subject(Person):
     """
