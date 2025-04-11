@@ -44,27 +44,28 @@ def calculate_age(birth_date):
 
     return years
 
-from flask import request
-import json
+def post(url, data):
+  from flask import request
+  import json
 
-## Creata a new person
-# Define the URL of the API
-url = "http://127.0.0.1:5000/person/"
+  ## Creata a new person
+  # Define the URL of the API
+  url = "http://127.0.0.1:5000/person/"
 
-# Define the data you want to send
+  # Define the data you want to send
 
-data = {
-    "id" : "122",
-    "first_name": "Dr.",
-    "last_name": "No"
-}
+  data = {
+      "id" : "122",
+      "first_name": "Dr.",
+      "last_name": "No"
+  }
 
-# Convert the data to JSON format
-data_json = json.dumps(data)
+  # Convert the data to JSON format
+  data_json = json.dumps(data)
 
-# Send a POST request to the API
-response = requests.post(url, data=data_json)
+  # Send a POST request to the API
+  response = request.post(url, data=data_json)
 
-# Print the response from the server
-print(response.headers['Location'])
-print(response.text)
+  # Print the response from the server
+  print(response.headers['Location'])
+  print(response.text)
