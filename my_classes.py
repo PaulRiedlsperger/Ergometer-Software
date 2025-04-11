@@ -1,5 +1,7 @@
-from my_functions import estimate_max_hr, calculate_age
+from my_functions import estimate_max_hr, calculate_age, post
 from datetime import date
+import requests
+import json
 
 
 class Person():
@@ -9,6 +11,35 @@ class Person():
     def __init__(self, person : dict):
         self.name = person['name']
         self.surname = person['surname']
+        self.id = person['id']
+
+    def post(self):
+        person_json = json.dumps(self.__dict__)
+        print("JSON: ", person_json)
+
+        ## Creata a new person
+        # Define the URL of the API
+        url = "http://127.0.0.1:5000/person"
+
+        # Define the data you want to send
+
+        data = {
+            "name": self.name,
+            "surname": self.surname,
+            "id": self.id
+        }
+
+        # Convert the data to JSON format
+        data_json = json.dumps(data)
+
+        # Send a POST request to the API
+        response = requests.post(url, data=data_json)
+
+        # Print the response from the server
+        print(response.headers['Location'])
+        print(response.text)
+
+    
 
 class Subject(Person):
     """
@@ -43,5 +74,7 @@ class Experiment():
         self.experiment = experiment
     pass
 
-person : dict = {"id": 1, "name": "Paul", "surname": "Doe", "age": date(2001,10,21), "gender": "male"}
-print(Subject(person).estimate_maximum_hr())
+person : dict = {"id": 1, "name": "Paul", "surname": "Doe", "age": date(2001,10,21), "gender": "male", "id": 1}
+#print(Subject(person).estimate_maximum_hr())
+apiperson = Person(person)
+Person.post(apiperson)
